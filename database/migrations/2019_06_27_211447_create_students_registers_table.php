@@ -16,7 +16,7 @@ class CreateStudentsRegistersTable extends Migration
         Schema::create('students_registers', function (Blueprint $table) {
             $table->bigIncrements('id');
 			$table->integer('Studen_id');
-			$table->bool('Assistance');
+			$table->boolean('Assistance');
 			$table->date('Date');
             $table->timestamps();
         });
